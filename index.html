@@ -1,0 +1,81 @@
+<!Deoctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Destination Guru</title>
+	<style type="text/css">
+		h1 {
+			text-align: center;
+			color: gray;
+		}
+
+		h2 {
+			text-align: center;
+			color: black;
+		}
+		fieldset {
+			display: block;
+			float: left;
+		}
+		input.nisse {
+			display: block;
+			float: left;
+			clear: both;
+			padding:5em;
+			font-size: 5em;
+		}
+		#result {
+			min-width: 1200px;
+			min-height: 500px;
+			padding:1em;
+			border: 2px solid red;
+			display: block;
+			float: left;
+			clear: both;
+		}
+	</style>
+</head>
+	<body>
+		<header>
+			<h1>Destination Guru</h1>
+			<h2> We are here to help you find your dream destination.</h2>
+
+			<!-- A FORM ...................     -->
+			<form>
+				<fieldset>
+					<legend>Climate: Warm or Cold?</legend>
+					<input type="radio" id="warm" name="climate" value="warm">
+					<label for="warm">Warm</label><br>
+					<input type="radio" id="cold" name="climate" value="cold">
+					<label for="cold">Cold</label><br>
+				</fieldset>
+				<fieldset>
+					<legend>Location: City or Small Town? </legend>
+					<input type="radio" id="city" name="location" value="city">
+					<label for="city">City</label><br>
+					<input type="radio" id="small-town" name="location" value="small-town">
+					<label for="small-town">Small town</label><br>
+				</fieldset>
+				<fieldset>
+					<legend>Language: English or Foreign? </legend>
+					<input type="radio" id="english" name="language" value="english">
+					<label for="english">English</label><br>
+					<input type="radio" id="foreign" name="language" value="foreign">
+					<label for="foreign">Foreign</label><br>
+				</fieldset>
+				<fieldset>
+					<legend>To do: Shopping or Relax? </legend>
+					<input type="radio" id="shopping" name="to-do" value="shopping">
+					<label for="shopping">Shopping</label><br>
+					<input type="radio" id="relax" name="to-do" value="relax">
+					<label for="relax">Relax</label><br>
+				</fieldset>
+				<input type="submit" class="nisse" value="Klick me, like right now Buster!!">
+			</form>
+		</header>
+
+		<div id="result">
+		</div>
+
+	</body>
+</html> 
