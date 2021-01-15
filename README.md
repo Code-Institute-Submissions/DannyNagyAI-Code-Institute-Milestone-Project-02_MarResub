@@ -40,7 +40,6 @@ The audience for this website are people that are nuts about both Real Madrid an
 - **HTML5** 
 - **CSS** 
 - **[Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/)** 
-- **[JQuery](https://jquery.com/)** 
 - **[JavaScript](https://www.javascript.com/)**
 
 ## Testing
