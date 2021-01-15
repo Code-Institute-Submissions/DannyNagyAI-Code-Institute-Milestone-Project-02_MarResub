@@ -66,7 +66,7 @@ No known bugs or bigger problems, however some minor things should be fixed:
 All this would be in the 2.0 version.
 
 ### Validation HTML á la w3
-All files passed validation at https://validator.w3.org/nu/#textarea
+The files passed validation at https://validator.w3.org/nu/#textarea
 
 ## Deployment
 My website is currently up on Github Pages - https://github.com/DannyNagyAI/Code-Institute-Milestone-Project-02
