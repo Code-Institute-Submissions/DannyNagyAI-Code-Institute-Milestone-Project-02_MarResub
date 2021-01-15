@@ -1,8 +1,8 @@
-# Real Madrid Game Finder 
+# Real Madrid Game Finder
 
 ![alt text](https://github.com/DannyNagyAI/Code-Institute-Milestone-Project-02/blob/main/rm_teaser.jpg "Header of the One Page")
 
->This website was made for a fictive company named **(Real Madrid Game Finder Co - API)**, that needed a website to show all upcoming games for Real Madrid this season. 
+>This website was made for a fictive company named **(Real Madrid Game Finder Co)**, that needed a website to show all upcoming games for Real Madrid this season. 
 
 The website displays information via a button click about the upcoming games such as date, home team, away team, arena and city. It also has some short information about Real Madrid Game Finder in the footer for the user to contact or get a clearer picture of the compant idea and story.
 
