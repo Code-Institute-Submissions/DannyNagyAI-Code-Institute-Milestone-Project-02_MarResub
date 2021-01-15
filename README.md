@@ -6,7 +6,7 @@
 
 The website displays information via a "button click" about upcoming Real Madrid games and also more info such as date, home team, away team, arena and city. It also has some short information about the Real Madrid Game Finder Co. in the footer, for the user to contact or get a clearer picture of the company background.
 
-My idea was to build the one page with a very simple usability and that also to make it easy for all **(Madridistas(aka "Real Madrid Fans"))** to find their team's upcoming games. 
+My idea was to build the one page with a very simple usability and that also to make it easy for all **Madridistas(aka "Real Madrid Fans")** to find their team's upcoming games. 
 
 ## User Experience (UX)
 The idea for this project was to build a API front-end website for a fictive company that is showing Real Madrid's upcoming games. 
