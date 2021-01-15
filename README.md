@@ -32,7 +32,7 @@ The audience for this website are people that are nuts about both Real Madrid an
 
 ### [One Page Website](https://github.com/DannyNagyAI/Code-Institute-Milestone-Project-01/blob/main/index.html)
 - Logo - Just a big welcoming logo with Real Madrid colors to make the user feel like they are in the right place. 
-- Information about the upcoming games in a simple table with an easy overview for the users.
+- Information about the upcoming games with some info and club logos in a simple table that makes it easy to overview for the users.
 - Footer - Including some brief info about the website, contact and address.
 
 
