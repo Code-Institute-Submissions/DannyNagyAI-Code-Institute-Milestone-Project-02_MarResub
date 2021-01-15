@@ -69,7 +69,7 @@ All this would be in the 2.0 version.
 The files passed validation at https://validator.w3.org/nu/#textarea
 
 ## Deployment
-My website is currently up on Github Pages - https://github.com/DannyNagyAI/Code-Institute-Milestone-Project-02
+My website is currently up on Github Pages - https://dannynagyai.github.io/Code-Institute-Milestone-Project-02/
 
 ## Credits
 
