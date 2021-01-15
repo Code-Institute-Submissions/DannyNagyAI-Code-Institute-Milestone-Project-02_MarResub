@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Real Madrid Game Finder</title>
+
+  <!-- Bootstrap core CSS -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Custom fonts  -->
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles  -->
+  <link href="style.css" rel="stylesheet">
+  <script src="laliga.js"></script>
+
+</head>
+
+<body>
+
+  <!-- Navigation + Logo -->
+
+  <nav>
+  	<img src="real.jpg"
+  	alt="Real Madrid Game Finder Logo">
+  </nav>
+  <!-- Navigation + Logo End -->
+
+  <!-- One CLick Button -->
+	<br>
+  	<div>
+	  	<input type="button" value="CLICK TO LOAD UPCOMING GAMES!" class="btn-lg btn-primary" onclick="getUpcomingGames();">
+
+		<ul id="resultlist">
+		</ul>
+	</div>
+	<br>
+
+	 <!-- One CLick Button End -->
+
+	 <!-- Table -->
+
+	<table class="table" id="matchtable">
+	  <thead>
+	    <tr>
+	      <th scope="col">#</th>
+	      <th scope="col">Date</th>
+	      <th scope="col">Home Team</th>
+	      <th scope="col">Away Team</th>
+	      <th scope="col">Arena</th>
+	      <th scope="col">City</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <!-- this will be populated by javascript REST-response -->
+	  </tbody>
+	</table>
+
+ <!-- Table End -->
+
+	<!-- Footer --> 
+
+	<footer class="bg-primary text-white text-center text-lg-start">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">About</h5>
+
+        <p>
+          Created by passionated Real Madrid fans. 
+          <br>
+          This is the website to find all upcoming "Los Blancos" games.
+          <br>
+          Hala Madrid!
+        </p>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Contact</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+          	info@realmadridgf.com
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Address</h5>
+
+        <ul class="list-unstyled mb-0">
+	       <li>
+	        	Calle Pintada 17
+	        </li>
+	        <li>
+	        	Nerja, Spain
+	    	</li>
+	        
+        </ul>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2020 Copyright:
+    <a class="text-white" href="">Real Madrid Game Finder Co.</a>
+  </div>
+</footer>
+
+	<!-- Footer End -->
+	
+</body>
+</html>
+  <!-- Table -->
+
