@@ -77,7 +77,7 @@ My website is currently up on Github Pages - https://dannynagyai.github.io/Code-
 All of the content on the website is an example/fictive. 
 
 ### Mentor
-Got a lot of help from a local Software developer with over 20 years of experience here in Sweden . 
+Got a lot of help from a local Software developer in Sweden named Daniel Sweder with over 20 years of programming experience . 
 
 ### Media 
 All of the photos used on this site were obtained (and bought) from Shutterstock [here](https://www.shutterstock.com/sv/home)
