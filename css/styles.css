@@ -10111,8 +10111,10 @@ h3 {
   }
 }
 .masthead {
-  padding-top: calc(6rem + 74px);
-  padding-bottom: 6rem;
+  /*padding-top: calc(1rem + 74px);
+  padding-bottom: 1rem;*/
+  padding-top: calc(2.8rem + 104px);
+  padding-bottom: 1rem;
 }
 .masthead .masthead-heading {
   font-size: 2.75rem;
@@ -10124,11 +10126,17 @@ h3 {
 .masthead .masthead-avatar {
   width: 15rem;
 }
+.masthead label {
+  margin-right: 1em;
+}
+
 
 @media (min-width: 992px) {
   .masthead {
-    padding-top: calc(6rem + 104px);
-    padding-bottom: 6rem;
+    /*padding-top: calc(6rem + 104px);
+    padding-bottom: 6rem;*/
+    padding-top: calc(2.8rem + 104px);
+    padding-bottom: 1rem;
   }
   .masthead .masthead-heading {
     font-size: 4rem;
@@ -10237,4 +10245,9 @@ form .row:first-child .floating-label-form-group {
 
 .copyright {
   background-color: #1a252f;
+}
+
+#matchtable img {
+	width: 20px;
+	margin-right: 1ex;
 }
