@@ -1,0 +1,19 @@
+header {
+    text-align: center;
+}
+
+#site_logo {
+    width: 10%;
+}
+
+#choice_area {
+    text-align: center;
+    border:1px dotted red;
+}
+
+
+#matchtable img {
+	width: 20px;
+	margin-right: 1ex;
+}
+
