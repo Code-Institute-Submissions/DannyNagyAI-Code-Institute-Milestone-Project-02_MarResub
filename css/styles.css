@@ -10113,7 +10113,7 @@ h3 {
 .masthead {
   /*padding-top: calc(1rem + 74px);
   padding-bottom: 1rem;*/
-  padding-top: calc(2.8rem + 104px);
+  padding-top: calc(1.8rem + 104px);
   padding-bottom: 1rem;
 }
 .masthead .masthead-heading {
@@ -10135,7 +10135,7 @@ h3 {
   .masthead {
     /*padding-top: calc(6rem + 104px);
     padding-bottom: 6rem;*/
-    padding-top: calc(2.8rem + 104px);
+    padding-top: calc(1.8rem + 104px);
     padding-bottom: 1rem;
   }
   .masthead .masthead-heading {
@@ -10247,7 +10247,28 @@ form .row:first-child .floating-label-form-group {
   background-color: #1a252f;
 }
 
+/* Customizations by Danny */
+
 #matchtable img {
 	width: 20px;
 	margin-right: 1ex;
+}
+
+fieldset select#months {
+    width: 12em;
+    margin: auto;
+    display: inline !important;
+    margin-left:2em;
+}
+
+fieldset label {
+    font-size: 24px;
+    position: relative;
+    top: -4px;
+    margin-left: 0.25em;
+}
+
+fieldset input[type="radio"] {
+    width: 24px;
+    height: 24px;
 }

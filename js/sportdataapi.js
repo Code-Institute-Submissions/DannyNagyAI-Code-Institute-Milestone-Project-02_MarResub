@@ -3,48 +3,59 @@ var API_KEY = "apikey=39106620-56b6-11eb-90e9-71b6fcd4fd65";
 var LEAUGES_URI = "/api/v1/soccer/leagues";
 var SEASONS_URI = "/api/v1/soccer/seasons";
 var MATCHES_URI = "/api/v1/soccer/matches";
+var PL_LEAGUID = 237;
+var LL_LEAGUID = 538;
+
 var DATE_FROM = "2021-04-01";
 var DATE_TO = "2021-04-31";
-
 var pl_seasonID, ll_seasonID, current_season_id;
 
-Promise.all([
-	fetch(REST_HOST+SEASONS_URI+"?"+API_KEY+"&league_id=237"),
-    fetch(REST_HOST+SEASONS_URI+"?"+API_KEY+"&league_id=538")
-]).then(function (responses) {
-	// Get a JSON object from each of the responses
-	return Promise.all(responses.map(function (response) {
-		return response.json();
-	}));
-}).then(function (data) {
-	// 1. Get some ID:s for current seasons ...
-    pl_seasonID = getCurrentSeasonID(data[0]);
-    ll_seasonID = getCurrentSeasonID(data[1]);
-    //console.log(pl_seasonID, ll_seasonID);
+// 1. Init
+getMatches(null);
 
-    // 2. Depending on what radiobutton (league) is "selected"(checked), set current_season_id 
-    if(document.getElementById("pl").checked = true) {
-        current_season_id = pl_seasonID;
-    }
-    else if(document.getElementById("ll").checked = true) {
-        current_season_id = ll_seasonID;
-    }
+function getMatches(src) {
+    Promise.all([
+        fetch(REST_HOST+SEASONS_URI+"?"+API_KEY+"&league_id=237"),
+        fetch(REST_HOST+SEASONS_URI+"?"+API_KEY+"&league_id=538")
+    ]).then(function (responses) {
+        // Get a JSON object from each of the responses
+        return Promise.all(responses.map(function (response) {
+            return response.json();
+        }));
+    }).then(function (data) {
+        // 1. Get some ID:s for current seasons ... future proof concept, gets the active season ID
+        pl_seasonID = getCurrentSeasonID(data[0]);
+        ll_seasonID = getCurrentSeasonID(data[1]);
+        if(src === null) {
+            // Set the default league to PL
+            current_season_id = pl_seasonID;
+            document.getElementById("pl").checked = true;
+        }
+        else {
+            // Else, take the value of the radiobutton of choosen league
+            console.log(src.value);
+            if(src.value == PL_LEAGUID) {
+                current_season_id = pl_seasonID;
+            }
+            else if(src.value == LL_LEAGUID) {
+                current_season_id = ll_seasonID;
+            }
+        }
 
-    // 3. Get the matches for the current season of the chosen league
-    var url = REST_HOST+MATCHES_URI+"?"+API_KEY+"&season_id="+current_season_id+"&date_from="+DATE_FROM+"&date_to="+DATE_TO;
-    var matches = fetch(url)
-        .then(async (response) => {
-        const data = await response.json();
-        //console.log(data);
-        renderMatches(data);
-    })
+        // 3. Get the matches for the current season of the chosen league
+        var url = REST_HOST+MATCHES_URI+"?"+API_KEY+"&season_id="+current_season_id+"&date_from="+DATE_FROM+"&date_to="+DATE_TO;
+        var matches = fetch(url)
+            .then(async (response) => {
+            const data = await response.json();
+            console.log(data);
+            renderMatches(data);
+        })
 
-}).catch(function (error) {
-	// if there's an error, log it
-	console.log(error);
-});
-
-
+    }).catch(function (error) {
+        // if there's an error, log it
+        console.log(error);
+    });
+}
 
 // Helper function, returns current, active seasonID
 function getCurrentSeasonID(json) {
@@ -66,7 +77,8 @@ function getCurrentSeasonID(json) {
 function renderMatches(data) {
     console.log(data);
     var rownr = 1;
-    var table = document.getElementById("matchtable");
+    var tablebody = document.getElementById("tablebody");
+    tablebody.innerHTML = "";
 
     // iterate the games from the current season of the chosen league ..
     data.data.forEach((match) => {
@@ -79,7 +91,7 @@ function renderMatches(data) {
         var city      = JSON.parse(JSON.stringify(match["venue"])) === null ? "N/A" : JSON.parse(JSON.stringify(match["venue"]["city"]));
 
         // Create an empty <tr> element and add it to the 1st position of the table:
-        var row = table.insertRow(-1);
+        var row = tablebody.insertRow(-1);
 
         // Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
         var cell1 = row.insertCell(0);

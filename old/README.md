@@ -1,10 +1,12 @@
-# Footy Game Finder
+# Footy Game Finder 
+## La Liga and Premier League Edition
 
 ![alt text](https://github.com/DannyNagyAI/Code-Institute-Milestone-Project-02/blob/main/rm_teaser.jpg "Header of the One Page")
 
->This website was made for a fictive company named **(Footy Game Finder Co)** that needed a website to show all upcoming games for their choosen top leagues in the world as La Liga, Premier League, Serie A and Bundesliga during the current season. 
+>This website was made for a fictive company named **(Footy Game Finder Co)** that needed a website to show all upcoming games for choosen top leagues in the world as La Liga and Premier League during the current season. 
 
-The website displays information via a "radio button" about upcoming top league football matches in La Liga (Spain), Premier League (England), Serie A (Italy), Bundesliga (Germany) and also more info such as date, home team, away team, arena and witch city the games will be played. It also has some short information about the Footy Game Finder Co. in the footer, for the the users to contact or get a clearer picture of the company background.
+The website displays information via a "radio button" about upcoming top league football matches in La Liga (Spain) and Premier League (England)
+and also more info such as date, home team, away team, arena and witch city the games will be played. It also has some short information about the Footy Game Finder Co. in the footer, for the the users to contact or get a clearer picture of the company background.
 
 My idea was to build the one page with a very simple usability and that also to make it easy for all football lovers to find their favorutie team's upcoming games. 
 
@@ -77,7 +79,7 @@ I have tested the Footy Game Finder website and was unable to find any error or 
 -   Mozilla 
 
 
-### Header/Logo:
+### Navbar:
 
 Click on each of the individual links within the menu (including the logo), and verify that each one is functioning correctly, and that they take the user to the correct place.
 
