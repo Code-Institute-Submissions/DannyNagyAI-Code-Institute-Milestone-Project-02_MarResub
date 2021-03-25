@@ -65,7 +65,7 @@ This will be the start for buidling the website.
 - **[API](https://sportdataapi.com/)**  I used the SportData  API to create the interactive part on the website.
 
 - **[Gitpod](https://gitpod.com/)**
-I relied on Gitpod's dev environment to write the code for my project.
+I relied on Gitpod's developer environment to write the code for my project.
 
 - **[GitHub](https://github.com/)**
 I hosted my deployed website to GitHub, with previous versions of my code stored through the commit history.
@@ -160,7 +160,7 @@ After that I clicked save.
 Then I pushed to 'master', and the website would be updated.
 
 My website can be found at the following URL:
->
+> https://dannynagyai.github.io/Code-Institute-Milestone-Project-02/.
 
 ## Credits
 
