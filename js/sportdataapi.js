@@ -6,6 +6,7 @@ var MATCHES_URI = "/api/v1/soccer/matches";
 var SCORERS_URI = "/api/v1/soccer/topscorers";
 var PL_LEAGUID = 237;
 var LL_LEAGUID = 538;
+var STANDINGS_URI = "/api/v1/soccer/standings";
 var todays_date = (new Date()).toISOString().split('T')[0];
 var pl_seasonID, ll_seasonID, current_season_id, pl_end_date, ll_end_date, league_end_date;
 const spinner = document.getElementById("spinner");
@@ -133,7 +134,7 @@ function renderMatches(data) {
     });
 }
 
-
+/*  get the top scorers from premier league */
 function getTopScorersPL() {
     let req = new XMLHttpRequest();
     req.open('GET', REST_HOST + SCORERS_URI + "?" + API_KEY + "&season_id=" + localStorage.getItem("pl_seasonID"));
@@ -181,6 +182,74 @@ function renderTopScorers(json, elementID) {
 
     })
 }   
+
+/* kommenrat */ 
+function getStandingsPL() {
+    let req = new XMLHttpRequest();
+    req.open('GET', REST_HOST + STANDINGS_URI + "?" + API_KEY + "&season_id=" + localStorage.getItem("pl_seasonID"));
+    req.onload = function() {
+        if (req.status == 200) {
+            renderStandings(req.responseText, "plleaderbord");
+        }
+        else {
+            console.log("Error: " + req.status);
+        }
+    }
+  req.send();
+}
+getStandingsPL();
+
+/* kommenrat */ 
+function getStandingsLL() {
+    let req = new XMLHttpRequest();
+    req.open('GET', REST_HOST + STANDINGS_URI + "?" + API_KEY + "&season_id=" + localStorage.getItem("ll_seasonID"));
+    req.onload = function() {
+        if (req.status == 200) {
+            renderStandings(req.responseText, "llleaderbord");
+        }
+        else {
+            console.log("Error: " + req.status);
+        }
+    }
+  req.send();
+}
+getStandingsLL();
+
+/* kommenrat */
+function renderStandings(json, elementID) {
+    var topscorer = document.getElementById(elementID);
+    var json_data = JSON.parse(json);
+
+    console.log(json_data);
+    var sorted_data = sortResults(json_data, 'points', false)
+    console.log(sorted_data);
+
+    /*
+    json_data.data.forEach((team) => {
+        var pos = JSON.parse(JSON.stringify(player["pos"]));
+        var player_name = JSON.parse(JSON.stringify(player["player"]["player_name"]));
+
+        if(pos >= 1 && pos <= 5)
+        {
+            var entry = document.createElement('li');
+            entry.appendChild(document.createTextNode(player_name));
+            topscorer.appendChild(entry);
+        }
+
+    })*/
+}   
+
+function sortResults(data, prop, asc) {
+    data.sort(function(a, b) {
+        if (asc) {
+            return (a[prop] > b[prop]) ? 1 : ((a[prop] < b[prop]) ? -1 : 0);
+        } else {
+            return (b[prop] > a[prop]) ? 1 : ((b[prop] < a[prop]) ? -1 : 0);
+        }
+    });
+    renderResults();
+}
+
 
 // ----------------------------------------------------------------------------------------
 // UTILITY FUNCTION - WILL BE USED IN VERSION 2.0 - COMING SUMMER 2021
