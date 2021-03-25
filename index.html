@@ -23,7 +23,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-warning text-uppercase fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top">Footy Game Finder</a>
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">Footy Game Finder <i class="fas fa-futbol"></i></a>
                 <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
@@ -47,45 +47,29 @@
                 
                 <input type="radio" id="ll" name="league" onchange="getMatches(this);" value="538">            
                 <label for="ll">LaLiga</label> 
-
-                <!-- Choice of period (month) -->
-                <select id="months" class="form-select form-select-lg mb-3">
-                    <option label="-- Choose Month --"></option>
-                    <option value="3" selected>Mars</option>
-                    <option value="4">April</option>
-                    <option value="5">May</option>
-                </select>
             </fieldset>
             
         </header>
         <!-- Portfolio Section-->
         <section class="page-section portfolio" id="portfolio">
             <div class="container">
-                <!-- Portfolio Section Heading-->
-                <!-- <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Harry Kane's pansarpung</h2> -->
-                <!-- Icon Divider-->
-                <!--<div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-futbol"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>-->
 
                 <!-- MATCH TABLE - UPCOMING GAMES -->
+                <div class="table-responsive"> 
                 <table class="table" id="matchtable">
                     <thead>
                         <tr>
-                            <th scope="col">#</th>
                             <th scope="col">Date</th>
                             <th scope="col">Home Game</th>
                             <th scope="col">Away Game</th>
                             <th scope="col">Arena</th>
-                            <th scope="col">City</th>
                         </tr>
                     </thead>
                     <tbody id="tablebody">
                         <!-- this will be populated by javascript REST-response -->
                     </tbody>
                 </table>
+                </div>
 
             </div>
         </section>
@@ -188,7 +172,7 @@
                     </div>
                     <!-- Footer About Text-->
                     <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4"> Footy Game Finder</h4>
+                        <h4 class="text-uppercase mb-4"> Footy Game Finder <i class="fas fa-futbol"></i></h4>
                         <p class="lead mb-0">
                             Only for pure football geeks.
                         </p>

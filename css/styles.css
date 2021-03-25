@@ -10266,9 +10266,13 @@ fieldset label {
     position: relative;
     top: -4px;
     margin-left: 0.25em;
+    margin-right: 2em;
+    font-weight: 900;
+    letter-spacing: 0.025em;
 }
 
 fieldset input[type="radio"] {
     width: 24px;
     height: 24px;
 }
+
