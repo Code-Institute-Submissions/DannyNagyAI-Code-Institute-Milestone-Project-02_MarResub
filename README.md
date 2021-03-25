@@ -7,12 +7,12 @@
 ## La Liga and Premier League Edition
 
 The Footy Game Finder website displays information in a table via click on "radio buttons" about upcoming top league football matches
-and also more info such as date, home team and away team. The website also contains league leaderboards which display information about standings and top scorers from the leagues. It also contains information about the Footy Game Finder Co. in the footer, 
+and also more info such as date, home team and away team. The website also contains league leaderboard which display information about top scorers from the leagues. It also contains information about the Footy Game Finder Co. in the footer, 
 for the the users to contact or get a clearer picture of the company background.
 
 ## Project idea
 
-My idea was to build an one page website with a very simple usability and that also to make it easy for all football lovers to find both La Liga and Premier League team's upcoming games. ords and top scorer.
+My idea and soltution for this project was to build a one page website with a very simple usability and that also to make it easy for all football lovers to find both La Liga and Premier League team's upcoming games, top scorers and extra.
 ## User Experience (UX)
 The idea for this project was to build a API front-end website for a fictive company that is showing the top leagues's upcoming games. 
 
@@ -34,7 +34,7 @@ The audience for this website are people that are nuts about both football and t
 
 This will be the start for buidling the website. 
 
->I tried to stay on the same path during the entire project with both colors and pictures. 
+>I tried to stay on the same path during the entire project with both colors and design. 
 
  ### Mockup/Wireframe for the Project
  Link to the Footy Game Finder made in Figma: 
@@ -42,17 +42,17 @@ This will be the start for buidling the website.
 
 ## Features
 
-### [One Page Website](https://github.com/DannyNagyAI/Code-Institute-Milestone-Project-01/blob/main/index.html)
-
 - **Navbar** - Just a basic and welcoming navbar with Foot Game Finders colors to make the user feel like they are in the right place and that they can get familiar with the brand and company. 
 
 - **Radio Buttons** that allows the user to choose between the two leagues and load different data into the table. 
 
 - An **"Upcoming Games"** section where all the about the upcoming games will be presented in a table that makes it easy to overview for the users.
 
-- A **Leadboards"** section where the user will find a the current leadbord of both leagues and their top scorers, it displays in four different tables that loads automatically. 
+- A **Leadboards"** section where the user will find a the current leadbord of top scorers, it displays in  different tables that loads automatically.
 
-- **Footer** - Including some brief info about the website, contact and address.
+- A **Contact** form for users to get in touch with Footy Game Finder Co. 
+
+- A **Footer** - Including some brief info about the website, contact and address.
 
 - Resposive design sutiable for desktop, tablet and phone view. 
 
@@ -94,14 +94,14 @@ I have tested the Footy Game Finder website and was unable to find any error or 
 
 - Scroll back up and ensure the navbar appears again.
 
-- Scroll down and ensure the navbar moves smoothly out of view. In mobile, verify that if the menu is open and visible when the user starts to scroll, it collapses hides along with the rest of the menu.
+- Scroll down the website and ensure the navbar moves smoothly out of view. Click and check if the navbar is closing and opening in mobile view.
 
 
 ### Radio Buttons:
 
-- Click the 'Premier League' radio button, a spinning loading wheel apperas,  and the table below get filled with information about the upcoming games in premier league. 
+- Click the 'Premier League' radio button, a spinning loading wheel apperas and some seconds after the table below get loaded and filled with information about the upcoming games in premier league. 
 
-- Click the 'La Liga' radio button and the table below, it removes the Premier League games data and now shows the upcoming games in La Liga games instead. 
+- Click the 'La Liga' radio button and the table below, it removes the Premier League games data in the table and now shows the upcoming games in La Liga instead. 
 
 
 ### Upcoming Games:
@@ -125,6 +125,7 @@ I have tested the Footy Game Finder website and was unable to find any error or 
 ### Issues/problems/improvements
 No known bugs or bigger problems, however some minor things should be fixed: 
 
+
 - A place for banners to make Footy Game Finder find an extra way to get income. 
 
 - The design could always improve such as colors, logo and more. 
@@ -133,10 +134,15 @@ No known bugs or bigger problems, however some minor things should be fixed:
 
 -  Build a login function that allows user to share news and talk about upcoming games.
 
+- Due to lack of time/resubmission deadline, I did not find a solution in JS in time that could load data from standings into, Premier League and La Liga table on leaderbords page. 
+
+- Due to lack of time/resubmission deadline, I did not find a quick solution for changing ID names in HTML/CSS because of the Boostrap templates/theme rules. 
+
+
 All this would be in the 2.0 version.
 
 ### Validation HTML
-The files passed validation at https://validator.w3.org/nu/#textarea
+The file passed validation at https://validator.w3.org/nu/#textarea
 
 ## Deployment
 The process to deploy the code was following:
@@ -151,7 +157,7 @@ I selected 'master branch' from the 'source' dropdown menu.
 
 After that I clicked save.
 
-Then I pushed to 'master', the live website would be updated.
+Then I pushed to 'master', and the website would be updated.
 
 My website can be found at the following URL:
 >
@@ -173,6 +179,8 @@ All of the photos used on this site were obtained (and bought) from Shutterstock
 - [w3Schools](https://www.w3schools.com/js/js_api_fetch.asp) - I used this to learn more about API.
 - [YouTube](https://www.youtube.com/results?search_query=api) - I used this to learn more about API and to view parts of many different videos.
 - [Bootstrap](https://startbootstrap.com/theme/freelancer) - I used this template to be able to shape the website.
-- [Mozilla Developer](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Introduction) - I used this page to learn more about API.
+- [Mozilla Developer](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Introduction) - I used this page to learn more about API, JS and Fetch.
+- [Stack Overflow](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Introduction) - I used this page to learn more about API, JS and Fetch.
+- 
 
 ## by DannyNagyAI

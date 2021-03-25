@@ -50,12 +50,12 @@
             </fieldset>
         </header>
         <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="portfolio">
+        <div class="page-section portfolio" id="portfolio">
             <div class="container">
                 <!-- this will show our spinner -->
                 <div hidden id="spinner"></div> 
                 
-                <!-- MATCH TABLE - UPCOMING GAMES -->
+                <!-- MATCH TABLE - UPCOMING GAMES (Had some problems with JavaScript and loading game tables, so had to put it down due to lack of time.) -->
                 <div class="table-responsive"> 
                 <table class="table" id="matchtable">
                     <thead>
@@ -67,13 +67,13 @@
                         </tr>
                     </thead>
                     <tbody id="tablebody">
-                        <!-- this will be populated by javascript REST-response -->
+                        <!-- this will soon be populated by javascript REST-response -->
                     </tbody>
                 </table>
                 </div>
 
             </div>
-        </section>
+        </div>
         <!-- About Section-->
         <section class="page-section bg-primary text-white mb-0" id="about">
             <div class="container">
@@ -138,10 +138,9 @@
                     <div class="divider-custom-icon"><i class="fas fa-futbol"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <!-- Contact Section Form-->
+                <!-- Contact Section Form (this will be working in version 2.0) -->
                 <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                        <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
+                    <div class="col-lg-8 mx-auto"></div>
                         <form id="contactForm" name="sentMessage" novalidate="novalidate">
                             <div class="control-group">
                                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
@@ -177,7 +176,6 @@
                         </form>
                     </div>
                 </div>
-            </div>
         </section>
         <!-- Footer-->
         <footer class="footer text-center bg-dark">
@@ -187,7 +185,7 @@
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">Location</h4>
                         <p class="lead mb-0">
-                            85462 Västernorrland Sweden
+                            85462, Västernorrland, Sweden
                             <br />
                             Sundsvall, Fridhemsgatan 114 
                         </p>
@@ -198,7 +196,7 @@
                         <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
                         <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
                         <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-youtube"></i></a>
                     </div>
                     <!-- Footer About Text-->
                     <div class="col-lg-4">
