@@ -3,15 +3,18 @@ var API_KEY = "apikey=39106620-56b6-11eb-90e9-71b6fcd4fd65";
 var LEAUGES_URI = "/api/v1/soccer/leagues";
 var SEASONS_URI = "/api/v1/soccer/seasons";
 var MATCHES_URI = "/api/v1/soccer/matches";
+var SCORERS_URI = "/api/v1/soccer/topscorers";
 var PL_LEAGUID = 237;
 var LL_LEAGUID = 538;
 var todays_date = (new Date()).toISOString().split('T')[0];
 var pl_seasonID, ll_seasonID, current_season_id, pl_end_date, ll_end_date, league_end_date;
+const spinner = document.getElementById("spinner");
 
 // 1. Init
 getMatches(null);
 
 function getMatches(src) {
+    spinner.removeAttribute('hidden');
     Promise.all([
         fetch(REST_HOST+SEASONS_URI+"?"+API_KEY+"&league_id=237"),
         fetch(REST_HOST+SEASONS_URI+"?"+API_KEY+"&league_id=538")
@@ -27,6 +30,10 @@ function getMatches(src) {
         pl_end_date = getSeasonEndDate(data[0]);
         ll_end_date = getSeasonEndDate(data[1]);
 
+        // We might need to store some data .. 
+        localStorage.setItem("pl_seasonID", pl_seasonID);
+        localStorage.setItem("ll_seasonID", ll_seasonID);
+        
         if(src === null) {
             // Set the default league to PL
             current_season_id = pl_seasonID;
@@ -35,7 +42,6 @@ function getMatches(src) {
         }
         else {
             // Else, take the value of the radiobutton of choosen league
-            console.log(src.value);
             if(src.value == PL_LEAGUID) {
                 current_season_id = pl_seasonID;
                 league_end_date = pl_end_date;
@@ -51,8 +57,8 @@ function getMatches(src) {
         var matches = fetch(url)
             .then(async (response) => {
             const data = await response.json();
-            console.log(data);
             renderMatches(data);
+            spinner.setAttribute('hidden', '');
         })
 
     }).catch(function (error) {
@@ -95,8 +101,6 @@ function getSeasonEndDate(json) {
 
 /* Finally - we get to render some data - phew .. */
 function renderMatches(data) {
-    //console.log(data);
-    //var rownr = 1;
     var tablebody = document.getElementById("tablebody");
     tablebody.innerHTML = "";
 
@@ -109,6 +113,7 @@ function renderMatches(data) {
         var htm_logo  = JSON.parse(JSON.stringify(match["home_team"]["logo"]));
         var atm_logo  = JSON.parse(JSON.stringify(match["away_team"]["logo"]));
         var arena     = JSON.parse(JSON.stringify(match["venue"])) === null ? "N/A" : JSON.parse(JSON.stringify(match["venue"]["name"]));
+        // Not showing city yet, might be used in version 2.0 ... save for now
         //var city      = JSON.parse(JSON.stringify(match["venue"])) === null ? "N/A" : JSON.parse(JSON.stringify(match["venue"]["city"]));
 
         // Create an empty <tr> element and add it to the 1st position of the table:
@@ -125,25 +130,61 @@ function renderMatches(data) {
         cell2.innerHTML = '<img src="'+htm_logo+'">'+homeTeam;
         cell3.innerHTML = '<img src="'+atm_logo+'">'+awayTeam;
         cell4.innerHTML = arena;
-
-        //rownr ++;
     });
 }
 
 
+function getTopScorersPL() {
+    let req = new XMLHttpRequest();
+    req.open('GET', REST_HOST + SCORERS_URI + "?" + API_KEY + "&season_id=" + localStorage.getItem("pl_seasonID"));
+    req.onload = function() {
+        if (req.status == 200) {
+            renderTopScorers(req.responseText, "pltopscorer");
+        }
+        else {
+            console.log("Error: " + req.status);
+        }
+    }
+  req.send();
+}
+getTopScorersPL();
 
+function getTopScorersLL() {
+    let req = new XMLHttpRequest();
+    req.open('GET', REST_HOST + SCORERS_URI + "?" + API_KEY + "&season_id=" + localStorage.getItem("ll_seasonID"));
+    req.onload = function() {
+        if (req.status == 200) {
+            renderTopScorers(req.responseText, "lltopscorer");
+        }
+        else {
+            console.log("Error: " + req.status);
+        }
+    }
+  req.send();
+}
+getTopScorersLL();
 
+function renderTopScorers(json, elementID) {
+    pltopscorer = document.getElementById(elementID);
+    var json_data = JSON.parse(json);
+
+    json_data.data.forEach((player) => {
+        var pos = JSON.parse(JSON.stringify(player["pos"]));
+        var player_name = JSON.parse(JSON.stringify(player["player"]["player_name"]));
+
+        if(pos >= 1 && pos <= 5)
+        {
+            var entry = document.createElement('li');
+            entry.appendChild(document.createTextNode(player_name));
+            pltopscorer.appendChild(entry);
+        }
+
+    })
+}   
 
 // ----------------------------------------------------------------------------------------
-// DELETE BELOW WHEN READY ... JUST SOME VALUEABLES .. 
+// UTILITY FUNCTION - WILL BE USED IN VERSION 2.0 - COMING SUMMER 2021
 // ----------------------------------------------------------------------------------------
-
-
-
-// ------------------------------
-// 237  = Premier League
-// 538  = LaLiga
-// ------------------------------
 function filterLeagues(json) {
 
     var la = new Array(4);
@@ -151,7 +192,7 @@ function filterLeagues(json) {
     json.data.forEach((league) => {
         var id = JSON.parse(JSON.stringify(league["league_id"]));
 
-        if(id == 18 || id == 314 || id == 392 || id == 538) {
+        if(id == PL_LEAGUID || id == LL_LEAGUID) {
             la.push(league);
         }
     })
