@@ -1,6 +1,6 @@
 # Footy Game Finder 
 
-![alt text](assets/img/FGF.jpg "Header of the One Page")
+![alt text](assets/img/fgf.jpg "Header of the One Page")
 
 >This website was made for a fictive company named **(Footy Game Finder Co)** that needed a website to show upcoming games for La Liga (Spain) and Premier League (England) during the current season. 
 
