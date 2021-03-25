@@ -40,7 +40,7 @@ This will be the start for buidling the website.
  Link to the Footy Game Finder made in Figma: 
 >https://www.figma.com/file/TJDljGcRYszv3fAVKWk5Xb/Footy-Game-Finder-(PL-%26-La-Liga)?node-id=0%3A1
 
-## Features
+## Website Features
 
 - **Navbar** - Just a basic and welcoming navbar with Foot Game Finders colors to make the user feel like they are in the right place and that they can get familiar with the brand and company. 
 
