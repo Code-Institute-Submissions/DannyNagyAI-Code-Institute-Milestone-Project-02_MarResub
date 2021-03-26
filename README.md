@@ -175,7 +175,7 @@ All of the content on the website is an example/fictive.
 Got a lot of help from a local Software developer in Sweden named Daniel Sweder with over 20 years of programming experience . 
 
 ### Media 
-All of the photos used on this site were obtained (and bought) from Shutterstock [here](https://www.shutterstock.com/sv/home)
+All of the media used on this site were obtained from **Sport Data API (club logos)** (https://sportdataapi.com/) and **Fontawesome** (https://fontawesome.com/)
 
 ### Acknowledgements and References
 - [Code Institute](https://www.codeinstitute.net/) - I used what I learned so far from Code Instiute (HTML/CSS/Boostrap/JavaScript/API). 
