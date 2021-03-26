@@ -4,11 +4,11 @@
 
 >This website was made for a fictive company named **(Footy Game Finder Co)** that needed a website to show upcoming games for La Liga (Spain) and Premier League (England) during the current season. 
 
-## La Liga and Premier League Edition
+## Description
 
 The Footy Game Finder website displays information in a table via click on "radio buttons" about upcoming top league football matches
-and also more info such as date, home team and away team. The website also contains league leaderboard which display information about top scorers from the leagues. It also contains information about the Footy Game Finder Co. in the footer, 
-for the the users to contact or get a clearer picture of the company background.
+and also more info such as date, home team and away team. The website also contains league leaderboard which display information about top scorers from the leagues and more. It also contains information about the Footy Game Finder Co. in the footer, 
+for the the users to view contact, addresses or get a clearer picture of the company background.
 
 ## Project start
 
@@ -16,7 +16,7 @@ My basic solution and sketch for creating project was to build a one page websit
 ## User Experience (UX)
 The idea for this project was to build a API front-end website for a fictive company that is showing the top leagues's upcoming games. 
 
-Footy Game Finder is interested in getting more people that likes football (Spanish and English) to find upcoming games easier and also through their own website.
+Footy Game Finder is interested in getting more people that likes football (both Spanish and English) to find upcoming games easier and also through their own website.
 
 The audience for this website are people that are nuts about both football and to see when the next top league match will be played. 
 
@@ -134,11 +134,13 @@ No known bugs or bigger problems, however some minor things should be fixed:
 
 -  Build a login function that allows user to share news and talk about upcoming games.
 
-- Due to lack of time/resubmission deadline, I did not find a solution in JS in time that could load data from standings into, Premier League and La Liga table on leaderbords page. 
+- Due to lack of time/resubmission deadline, I did not find a solution in JSON and JS in time that could load data from standings into, Premier League and La Liga table on leaderbords page. 
 
 - Due to lack of time/resubmission deadline, I did not find a quick solution for changing some of the ID names in HTML/CSS because of the Boostrap templates/theme many rules.
 
 - A recomendation is to save data to a **local storage** or **session storage** for faster performance and unnecessary web-trafic use.  
+
+- A **free** subscription on SportDataApi(https://sportdataapi.com/) give accesss to use of two leagues and this was choosen for this project. To be able to access more leauges then a payed subscription is needed. 
 
 
 All this would be in the 2.0 version.
@@ -183,6 +185,7 @@ All of the photos used on this site were obtained (and bought) from Shutterstock
 - [Bootstrap](https://startbootstrap.com/theme/freelancer) - I used this template to be able to shape the website.
 - [Mozilla Developer](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Introduction) - I used this page to learn more about API, JS and Fetch.
 - [Stack Overflow](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Introduction) - I used this page to learn more about API, JS and Fetch.
+- - [SportDataAPI](https://sportdataapi.com/) - I used this website for bulding fetching data/API.
 - 
 
 ## by DannyNagyAI
