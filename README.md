@@ -178,7 +178,7 @@ All of the photos used on this site were obtained (and bought) from Shutterstock
 ### Acknowledgements and References
 - [Code Institute](https://www.codeinstitute.net/) - I used what I learned so far from Code Instiute (HTML/CSS/Boostrap/JavaScript/API). 
 - [Sport Data API](https://www.https://app.sportdataapi.com/) - I used this website to learn more about API and to use their services.
-- [w3Schools](https://www.w3schools.com/js/js_api_fetch.asp) - I used this to learn more about API.
+- [w3Schools](https://www.w3schools.com/js/js_api_fetch.asp) - I used this to learn more about API and JS.
 - [YouTube](https://www.youtube.com/results?search_query=api) - I used this to learn more about API and to view parts of many different videos.
 - [Bootstrap](https://startbootstrap.com/theme/freelancer) - I used this template to be able to shape the website.
 - [Mozilla Developer](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Introduction) - I used this page to learn more about API, JS and Fetch.
