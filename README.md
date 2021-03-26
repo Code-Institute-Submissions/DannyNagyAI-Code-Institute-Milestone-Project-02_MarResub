@@ -136,7 +136,9 @@ No known bugs or bigger problems, however some minor things should be fixed:
 
 - Due to lack of time/resubmission deadline, I did not find a solution in JS in time that could load data from standings into, Premier League and La Liga table on leaderbords page. 
 
-- Due to lack of time/resubmission deadline, I did not find a quick solution for changing ID names in HTML/CSS because of the Boostrap templates/theme rules. 
+- Due to lack of time/resubmission deadline, I did not find a quick solution for changing some of the ID names in HTML/CSS because of the Boostrap templates/theme many rules.
+
+- A recomendation is to save data to a **local storage** or **session storage** for fast perfromance and unnecessary web-trafic use.  
 
 
 All this would be in the 2.0 version.
