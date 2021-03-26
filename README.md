@@ -10,7 +10,7 @@ The Footy Game Finder website displays information in a table via click on "radi
 and also more info such as date, home team and away team. The website also contains league leaderboard which display information about top scorers from the leagues and more. It also contains information about the Footy Game Finder Co. in the footer, 
 for the the users to view contact, addresses or get a clearer picture of the company background.
 
-## Project start
+## Project Start
 
 My basic solution and sketch for creating project was to build a one page website with a very simple usability and that also to make it easy for all football lovers to find both La Liga and Premier League team's upcoming games, top scorers and more.
 ## User Experience (UX)
