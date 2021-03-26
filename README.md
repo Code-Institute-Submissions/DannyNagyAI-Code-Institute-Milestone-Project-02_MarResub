@@ -10,9 +10,9 @@ The Footy Game Finder website displays information in a table via click on "radi
 and also more info such as date, home team and away team. The website also contains league leaderboard which display information about top scorers from the leagues. It also contains information about the Footy Game Finder Co. in the footer, 
 for the the users to contact or get a clearer picture of the company background.
 
-## Project idea
+## Project start
 
-My idea and soltution for this project was to build a one page website with a very simple usability and that also to make it easy for all football lovers to find both La Liga and Premier League team's upcoming games, top scorers and extra.
+My basic solution and sketch for creating project was to build a one page website with a very simple usability and that also to make it easy for all football lovers to find both La Liga and Premier League team's upcoming games, top scorers and more.
 ## User Experience (UX)
 The idea for this project was to build a API front-end website for a fictive company that is showing the top leagues's upcoming games. 
 
@@ -138,7 +138,7 @@ No known bugs or bigger problems, however some minor things should be fixed:
 
 - Due to lack of time/resubmission deadline, I did not find a quick solution for changing some of the ID names in HTML/CSS because of the Boostrap templates/theme many rules.
 
-- A recomendation is to save data to a **local storage** or **session storage** for fast perfromance and unnecessary web-trafic use.  
+- A recomendation is to save data to a **local storage** or **session storage** for faster performance and unnecessary web-trafic use.  
 
 
 All this would be in the 2.0 version.
