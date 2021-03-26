@@ -16,7 +16,7 @@ My idea and soltution for this project was to build a one page website with a ve
 ## User Experience (UX)
 The idea for this project was to build a API front-end website for a fictive company that is showing the top leagues's upcoming games. 
 
-Footy Game Finder Co. is interested in getting more people that likes football (Spanish and English) to find upcoming games easier and also through their own website.
+Footy Game Finder is interested in getting more people that likes football (Spanish and English) to find upcoming games easier and also through their own website.
 
 The audience for this website are people that are nuts about both football and to see when the next top league match will be played. 
 
